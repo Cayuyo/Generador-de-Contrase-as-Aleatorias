@@ -1,0 +1,25 @@
+﻿@model Generador_de_Contraseñas_Aleatorias.Models.PasscodeModel
+
+<h1>Código de acceso aleatorio nº @ViewBag.PasscodeCount</h1>
+
+
+<!DOCTYPE html>
+<html lang="es-CL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Passcode Generator</title>
+
+    <link rel="stylesheet" href="~/css/site.css">
+
+<body>
+    <div class="center-content">
+        <form method="post">
+            <h3>@Model.Passcode</h3>
+            <button class="btn1" type="submit">Generate</button>
+        </form>
+    </div>
+</body>
+
+</html>
